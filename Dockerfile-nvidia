@@ -1,8 +1,7 @@
 ## Dockerfile to build opencv from sources with CUDA support
 ## Based on Josip Janzic file and Thomas Herbin's work
 
-# FROM nvidia/cuda:9.0-devel
-FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
+FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu16.04
 MAINTAINER Hendrik Hilleckes <hhllcks@gmail.com>
 
 ###########################
