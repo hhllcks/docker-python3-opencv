@@ -1,4 +1,4 @@
-FROM python:3.7
+FROM tensorflow/tensorflow:1.13.1-gpu-py3
 MAINTAINER Josip Janzic <josip@jjanzic.com>
 
 RUN apt-get update \
@@ -23,7 +23,7 @@ RUN apt-get update \
 RUN pip install numpy
 
 WORKDIR /
-ENV OPENCV_VERSION="4.1.0"
+ENV OPENCV_VERSION="3.4.2"
 RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip \
 && unzip ${OPENCV_VERSION}.zip \
 && mkdir /opencv-${OPENCV_VERSION}/cmake_binary \
