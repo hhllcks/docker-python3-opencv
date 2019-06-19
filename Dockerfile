@@ -1,5 +1,5 @@
 FROM tensorflow/tensorflow:1.13.1-gpu-py3
-MAINTAINER Josip Janzic <josip@jjanzic.com>
+MAINTAINER Hendrik Hilleckes <hhllcks@gmail.com>
 
 RUN apt-get update \
     && apt-get install -y \
